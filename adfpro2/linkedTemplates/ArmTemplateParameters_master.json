@@ -1,0 +1,39 @@
+{
+	"$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"factoryName": {
+			"value": "adfpro2"
+		},
+		"ADlLs_accountKey": {
+			"value": ""
+		},
+		"AzDlLs_connectionString": {
+			"value": ""
+		},
+		"AzSaLS_connectionString": {
+			"value": ""
+		},
+		"AzSqlDbLs_connectionString": {
+			"value": ""
+		},
+		"LsCustMasterOP_connectionString": {
+			"value": ""
+		},
+		"LsJoinsOp_connectionString": {
+			"value": ""
+		},
+		"LsOlapOp_connectionString": {
+			"value": ""
+		},
+		"ADlLs_properties_typeProperties_url": {
+			"value": "https://datalakepro2.dfs.core.windows.net/"
+		},
+		"containerUri": {
+			"value": ""
+		},
+		"containerSasToken": {
+			"value": ""
+		}
+	}
+}
