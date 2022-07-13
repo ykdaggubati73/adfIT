@@ -1,0 +1,16 @@
+{
+	"name": "LsCustMasterOP",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"annotations": [],
+		"type": "SqlServer",
+		"typeProperties": {
+			"connectionString": "integrated security=False;data source=yk\\SQLEXPRESS;initial catalog=Joins;user id=Superuser",
+			"encryptedCredential": "eyJDcmVkZW50aWFsSWQiOiJkYjcyNDM5OC1hMmM0LTQwZTgtYTBlNS1mZDVmM2EwMzExNWYiLCJWZXJzaW9uIjoiMi4wIiwiQ2xhc3NUeXBlIjoiTWljcm9zb2Z0LkRhdGFQcm94eS5Db3JlLkludGVyU2VydmljZURhdGFDb250cmFjdC5DcmVkZW50aWFsU1UwNkNZMTQifQ=="
+		},
+		"connectVia": {
+			"referenceName": "integrationRuntime1",
+			"type": "IntegrationRuntimeReference"
+		}
+	}
+}

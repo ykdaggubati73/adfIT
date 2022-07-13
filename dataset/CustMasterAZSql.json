@@ -1,0 +1,17 @@
+{
+	"name": "CustMasterAZSql",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzSqlDbLs",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "custmaster"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

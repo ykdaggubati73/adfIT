@@ -1,0 +1,44 @@
+{
+	"name": "DsCustMasterOP",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LsCustMasterOP",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "SqlServerTable",
+		"schema": [
+			{
+				"name": "CustomerName",
+				"type": "varchar"
+			},
+			{
+				"name": "DOB",
+				"type": "date"
+			},
+			{
+				"name": "EmailID",
+				"type": "varchar"
+			},
+			{
+				"name": "PhoneNo",
+				"type": "bigint",
+				"precision": 19
+			},
+			{
+				"name": "Address",
+				"type": "varchar"
+			},
+			{
+				"name": "AccNo",
+				"type": "int",
+				"precision": 10
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "custmaster"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}
