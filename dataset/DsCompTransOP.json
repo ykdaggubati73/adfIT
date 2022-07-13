@@ -1,0 +1,82 @@
+{
+	"name": "DsCompTransOP",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LsCompTransOP",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "SqlServerTable",
+		"schema": [
+			{
+				"name": "column_a",
+				"type": "varchar"
+			},
+			{
+				"name": "trans_id",
+				"type": "nvarchar"
+			},
+			{
+				"name": "account_id",
+				"type": "varchar"
+			},
+			{
+				"name": "type",
+				"type": "nvarchar"
+			},
+			{
+				"name": "operation",
+				"type": "nvarchar"
+			},
+			{
+				"name": "amount",
+				"type": "float",
+				"precision": 15
+			},
+			{
+				"name": "balance",
+				"type": "float",
+				"precision": 15
+			},
+			{
+				"name": "k_symbol",
+				"type": "nvarchar"
+			},
+			{
+				"name": "bank",
+				"type": "nvarchar"
+			},
+			{
+				"name": "account",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "year",
+				"type": "varchar"
+			},
+			{
+				"name": "month",
+				"type": "tinyint",
+				"precision": 3
+			},
+			{
+				"name": "day",
+				"type": "tinyint",
+				"precision": 3
+			},
+			{
+				"name": "fulldate",
+				"type": "date"
+			},
+			{
+				"name": "fulltime",
+				"type": "nvarchar"
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "CompTrans"
+		}
+	}
+}
