@@ -23,6 +23,14 @@
 			"type": "secureString",
 			"metadata": "Secure string for 'connectionString' of 'AzSqlDbLs'"
 		},
+		"AzureSqlDatabase1_connectionString": {
+			"type": "secureString",
+			"metadata": "Secure string for 'connectionString' of 'AzureSqlDatabase1'"
+		},
+		"LsCompTransOP_connectionString": {
+			"type": "secureString",
+			"metadata": "Secure string for 'connectionString' of 'LsCompTransOP'"
+		},
 		"LsCustMasterOP_connectionString": {
 			"type": "secureString",
 			"metadata": "Secure string for 'connectionString' of 'LsCustMasterOP'"
@@ -34,6 +42,14 @@
 		"LsOlapOp_connectionString": {
 			"type": "secureString",
 			"metadata": "Secure string for 'connectionString' of 'LsOlapOp'"
+		},
+		"LsSqlProd_connectionString": {
+			"type": "secureString",
+			"metadata": "Secure string for 'connectionString' of 'LsSqlProd'"
+		},
+		"LsAzSqlProd_connectionString": {
+			"type": "secureString",
+			"metadata": "Secure string for 'connectionString' of 'LsAzSqlProd'"
 		},
 		"ADlLs_properties_typeProperties_url": {
 			"type": "string",
@@ -81,11 +97,23 @@
 					"LsOlapOp_connectionString": {
 						"value": "[parameters('LsOlapOp_connectionString')]"
 					},
+					"LsAzSqlProd_connectionString": {
+						"value": "[parameters('LsAzSqlProd_connectionString')]"
+					},
+					"AzureSqlDatabase1_connectionString": {
+						"value": "[parameters('AzureSqlDatabase1_connectionString')]"
+					},
+					"LsCompTransOP_connectionString": {
+						"value": "[parameters('LsCompTransOP_connectionString')]"
+					},
 					"LsCustMasterOP_connectionString": {
 						"value": "[parameters('LsCustMasterOP_connectionString')]"
 					},
 					"LsJoinsOp_connectionString": {
 						"value": "[parameters('LsJoinsOp_connectionString')]"
+					},
+					"LsSqlProd_connectionString": {
+						"value": "[parameters('LsSqlProd_connectionString')]"
 					},
 					"ADlLs_properties_typeProperties_url": {
 						"value": "[parameters('ADlLs_properties_typeProperties_url')]"
@@ -93,6 +121,26 @@
 				}
 			},
 			"dependsOn": []
+		},
+		{
+			"name": "adfpro2_ArmTemplate_1",
+			"type": "Microsoft.Resources/deployments",
+			"apiVersion": "2018-02-01",
+			"properties": {
+				"mode": "incremental",
+				"templateLink": {
+					"uri": "[concat(parameters('containerUri'), '/ArmTemplate_1.json', parameters('containerSasToken'))]",
+					"contentVersion": "1.0.0.0"
+				},
+				"parameters": {
+					"factoryName": {
+						"value": "[parameters('factoryName')]"
+					}
+				}
+			},
+			"dependsOn": [
+				"[resourceId('Microsoft.Resources/deployments', 'adfpro2_ArmTemplate_0')]"
+			]
 		}
 	]
 }

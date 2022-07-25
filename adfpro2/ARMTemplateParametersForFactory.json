@@ -17,6 +17,12 @@
 		"AzSqlDbLs_connectionString": {
 			"value": ""
 		},
+		"AzureSqlDatabase1_connectionString": {
+			"value": ""
+		},
+		"LsCompTransOP_connectionString": {
+			"value": ""
+		},
 		"LsCustMasterOP_connectionString": {
 			"value": ""
 		},
@@ -24,6 +30,12 @@
 			"value": ""
 		},
 		"LsOlapOp_connectionString": {
+			"value": ""
+		},
+		"LsSqlProd_connectionString": {
+			"value": ""
+		},
+		"LsAzSqlProd_connectionString": {
 			"value": ""
 		},
 		"ADlLs_properties_typeProperties_url": {
