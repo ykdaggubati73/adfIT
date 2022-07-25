@@ -1,0 +1,20 @@
+{
+	"name": "DS_Azure",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LsAzSqlProd",
+			"type": "LinkedServiceReference"
+		},
+		"parameters": {
+			"TableName": {
+				"type": "string"
+			},
+			"SchemaName": {
+				"type": "string"
+			}
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": []
+	}
+}
