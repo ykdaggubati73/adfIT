@@ -1,0 +1,20 @@
+{
+	"name": "DS_Source",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LsSqlProd",
+			"type": "LinkedServiceReference"
+		},
+		"parameters": {
+			"TableName": {
+				"type": "string"
+			},
+			"SchemaName": {
+				"type": "string"
+			}
+		},
+		"annotations": [],
+		"type": "SqlServerTable",
+		"schema": []
+	}
+}

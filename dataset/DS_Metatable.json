@@ -1,0 +1,41 @@
+{
+	"name": "DS_Metatable",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LsSqlProd",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "SqlServerTable",
+		"schema": [
+			{
+				"name": "SourceTab",
+				"type": "varchar"
+			},
+			{
+				"name": "SourceSchema",
+				"type": "varchar"
+			},
+			{
+				"name": "SourceDb",
+				"type": "varchar"
+			},
+			{
+				"name": "SinkTab",
+				"type": "varchar"
+			},
+			{
+				"name": "SinkSchema",
+				"type": "varchar"
+			},
+			{
+				"name": "SinkDb",
+				"type": "varchar"
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "MetaTable"
+		}
+	}
+}
