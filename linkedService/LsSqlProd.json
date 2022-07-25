@@ -1,0 +1,12 @@
+{
+	"name": "LsSqlProd",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"annotations": [],
+		"type": "SqlServer",
+		"typeProperties": {
+			"connectionString": "integrated security=False;data source=yk\\SQLEXPRESS;initial catalog=Testdb;user id=SuperUser",
+			"encryptedCredential": "ew0KICAiVmVyc2lvbiI6ICIyMDE3LTExLTMwIiwNCiAgIlByb3RlY3Rpb25Nb2RlIjogIktleSIsDQogICJTZWNyZXRDb250ZW50VHlwZSI6ICJQbGFpbnRleHQiLA0KICAiQ3JlZGVudGlhbElkIjogIkRBVEFGQUNUT1JZQEY1NEM1OTk3LTRDN0MtNDdCMy1BQ0EwLUJEQjUwQkQ2OUVEOF9iNzgzMTllYy00Y2M1LTQwMTAtOWEzNC02ZjllYjJiOTRjNjgiDQp9"
+		}
+	}
+}
